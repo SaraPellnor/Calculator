@@ -25,7 +25,20 @@ class Calculator {
     }
 
     function calculate() {
-        
+        switch ($this -> operator){
+            case "add":
+                return $this -> num1 + $this -> num2;
+                break;
+            case "sub":
+                return $this -> num1 - $this -> num2;
+                break;
+            case "div":
+                return $this -> num1 / $this -> num2;
+                break;
+            case "mul":
+                return $this -> num1 * $this -> num2;
+                break;
+        }
     }
 
 
